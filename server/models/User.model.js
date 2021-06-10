@@ -16,5 +16,5 @@ const userSchema = new Schema(
 );
 
 const User = model("User", userSchema);
-
+// Testing
 module.exports = User;
