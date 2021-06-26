@@ -20,4 +20,10 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.post("/:id/delete", (req, res, next) => {
+  Pin.findByIdAndRemove(req.params.id).then((_) => {
+    res.status(200).json({ message: "Successfully removed the pin" });
+  });
+});
+
 module.exports = router;
