@@ -23,7 +23,7 @@ module.exports = (app) => {
   app.use(
     cors({
       credentials: true,
-      origin: "https://amazing-hoover-f75b63.netlify.app" || "http://localhost:3000",
+      origin:[ "https://amazing-hoover-f75b63.netlify.app" , "http://localhost:3000"]
     })
   );
 
